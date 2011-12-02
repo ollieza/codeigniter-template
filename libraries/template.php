@@ -33,9 +33,9 @@ class Template {
 		$this->CI->load->config('templatelib_config', TRUE);
 		$this->config = $this->CI->config->item('templatelib_config');
 		
-		$this->page_title = $this->config['autoresponder_page_title'];
-		$this->meta_keywords = $this->config['autoresponder_meta_keywords'];
-		$this->meta_description = $this->config['autoresponder_meta_description'];
+		$this->page_title = $this->config['template_page_title'];
+		$this->meta_keywords = $this->config['template_meta_keywords'];
+		$this->meta_description = $this->config['template_meta_description'];
 	}
 
 	// --------------------------------------------------------------------
@@ -112,5 +112,5 @@ class Template {
 	// --------------------------------------------------------------------
 }
 
-/* End of file autoresponder.php */
-/* Location: ./application/libraries/autoresponder.php */
+/* End of file template.php */
+/* Location: ./application/libraries/template.php */

@@ -1,0 +1,50 @@
+Template library - production ready - CI 2.1.0 compatible
+====================================================================
+
+A simple page template library for the CodeIgniter framework.
+
+Supports:
+
+- Multiple template support e.g. default, admin, iframe
+- Template files e.g. header, footer
+- Body css id and class
+- Page title
+- Meta description and keywords on a per page basis
+
+Config
+------
+
+Add values to the config file settings.
+
+Usage:
+------
+
+Building a page
+
+$this->template->build_page('pages/welcome/index', $this->data);
+
+Other functions:
+
+$this->template->meta_description('Get in touch and find out more');
+-> Add a per page meta description. Default to config file value.
+
+$this->template->meta_keywords('shopping, phones, fast delivery, media');
+-> Add a per page meta keywords. Default to config file value.
+
+$this->template->page_title('Contact us');
+-> Add a page title. Default to config file value.
+
+$this->template->body_id('contact_us');
+-> Add a id to the body tag i.e. <body id="contact_is">
+
+$this->template->body_class('green');
+-> Add a id to the body tag i.e. <body class="green">
+
+$this->template->template_name('iframe');
+-> Use a specific theme. Note admin is auto-detected from the view path.
+
+Extra
+-----
+
+If you'd like to request changes, report bug fixes, or contact
+the developer of this library, please email <orattue[at]toomanytabs.com>

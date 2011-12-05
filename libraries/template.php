@@ -22,6 +22,7 @@ class Template {
 	var $body_id = NULL;
 	var $body_class = NULL;
 	var $page_title;
+	var $template_directory = 'templates/page';
 	var $template_name = 'default';
 	
 	function Template()
